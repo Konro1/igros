@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 // Heading
 $_['heading_title']         = 'Customer Orders Report';
@@ -19,4 +20,27 @@ $_['column_action']         = 'Action';
 $_['entry_date_start']      = 'Date Start:';
 $_['entry_date_end']        = 'Date End:';
 $_['entry_status']          = 'Order Status:';
+=======
+<?php
+// Heading
+$_['heading_title']         = 'Customer Orders Report';
+
+// Text
+$_['text_all_status']       = 'All Statuses';
+
+// Column
+$_['column_customer']       = 'Customer Name';
+$_['column_email']          = 'E-Mail';
+$_['column_customer_group'] = 'Customer Group';
+$_['column_status']         = 'Status';
+$_['column_orders']         = 'No. Orders';
+$_['column_products']       = 'No. Products';
+$_['column_total']          = 'Total';
+$_['column_action']         = 'Action';
+
+// Entry
+$_['entry_date_start']      = 'Date Start:';
+$_['entry_date_end']        = 'Date End:';
+$_['entry_status']          = 'Order Status:';
+>>>>>>> 7638022f044301e632a2ad52a22d03e919dbc2c0
 ?>
