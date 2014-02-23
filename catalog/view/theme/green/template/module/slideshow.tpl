@@ -1,16 +1,19 @@
-<div class="slideshow">
-  <div id="slideshow<?php echo $module; ?>" class="nivoSlider" style="width: <?php echo $width; ?>px; height: <?php echo $height; ?>px;">
-    <?php foreach ($banners as $banner) { ?>
-    <?php if ($banner['link']) { ?>
-    <a href="<?php echo $banner['link']; ?>"><img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" /></a>
-    <?php } else { ?>
-    <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" />
-    <?php } ?>
-    <?php } ?>
+<link rel="stylesheet" type="text/css" href="catalog/view/vendor/wow_slider/engine1/style.css" />
+  <div id="wowslider-container1">
+  <div class="ws_images">
+    <ul>
+      <?php foreach ($banners as $banner) { ?>
+      <?php if ($banner['link']) { ?>
+      <li><a href="<?php echo $banner['link']; ?>"><img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" title="<?php echo $banner['title']; ?>" /></a></li>
+      <?php } else { ?>
+      <li><img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" title="<?php echo $banner['title']; ?>" /></li>
+      <?php } ?>
+      <?php } ?>
+    </ul>
   </div>
 </div>
-<script type="text/javascript"><!--
-$(document).ready(function() {
-	$('#slideshow<?php echo $module; ?>').nivoSlider();
-});
---></script>
+<script src="catalog/view/vendor/wow_slider/engine1/wowslider.js"></script>
+<script src="catalog/view/vendor/wow_slider/engine1/script.js"></script>
+<script>
+  $(".ws_images div:last").hide();
+</script>

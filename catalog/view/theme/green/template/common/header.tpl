@@ -126,6 +126,7 @@
             </nav>
           </div>
           <?php } ?>
+          <div class="row content">
           <?php if ($error) { ?>
 
           <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>

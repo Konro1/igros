@@ -1,3 +1,7 @@
 2014-02-13 21:34:54 - PHP Notice:  Error: Could not load language ukrainian! in /srv/www/igros.mls/system/library/language.php on line 39
 2014-02-13 21:35:05 - PHP Notice:  Error: Could not load language ukrainian! in /srv/www/igros.mls/system/library/language.php on line 39
 2014-02-13 21:35:05 - PHP Notice:  Error: Could not load language ukrainian! in /srv/www/igros.mls/system/library/language.php on line 39
+2014-02-23 19:57:31 - PHP Notice:  Undefined variable: i in /srv/www/igros.mls/catalog/view/theme/green/template/module/featured.tpl on line 6
+2014-02-23 19:57:31 - PHP Notice:  Undefined variable: i in /srv/www/igros.mls/catalog/view/theme/green/template/module/featured.tpl on line 7
+2014-02-23 19:57:31 - PHP Notice:  Undefined variable: i in /srv/www/igros.mls/catalog/view/theme/green/template/module/featured.tpl on line 31
+2014-02-23 19:57:31 - PHP Notice:  Undefined variable: i in /srv/www/igros.mls/catalog/view/theme/green/template/module/featured.tpl on line 34

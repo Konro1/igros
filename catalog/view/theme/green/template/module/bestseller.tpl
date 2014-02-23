@@ -1,11 +1,16 @@
-<div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
-  <div class="box-content">
-    <div class="box-product">
+<div class="bestseller col-md-3">
+    <div class="box-heading well well-sm">
+      <h4><?php echo $heading_title; ?></h4>  
+    </div>
+    <div class="box-content">
       <?php foreach ($products as $product) { ?>
-      <div>
+      <div class="col-md-12 featured-grid">
         <?php if ($product['thumb']) { ?>
-        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+        <div class="image">
+          <a href="<?php echo $product['href']; ?>">
+            <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" />
+          </a>
+        </div>
         <?php } ?>
         <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
         <?php if ($product['price']) { ?>
@@ -20,9 +25,13 @@
         <?php if ($product['rating']) { ?>
         <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
         <?php } ?>
-        <div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div>
+        <div class="cart">
+          <a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button-cart">
+            <i class="glyphicon glyphicon-plus"></i>&nbsp;<span><?php echo $button_cart; ?></span></a>
+            <a href="<?php echo $product['href']; ?>" class="button-view"> Переглянути </a>
+          </div>
+        </div>
+        <?php } ?>
       </div>
-      <?php } ?>
-    </div>
   </div>
-</div>
+  <div class="clearfix"></div>
