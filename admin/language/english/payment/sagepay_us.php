@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 // Heading
 $_['heading_title']      = 'Sage Payment Solutions (US)';
@@ -20,27 +19,4 @@ $_['entry_sort_order']   = 'Sort Order:';
 $_['error_permission']   = 'Warning: You do not have permission to modify payment SagePay!';
 $_['error_merchant_id']  = 'Merchant ID Required!';
 $_['error_merchant_key'] = 'Merchant Key Required!';
-=======
-<?php
-// Heading
-$_['heading_title']      = 'Sage Payment Solutions (US)';
-
-// Text 
-$_['text_payment']       = 'Payment'; 
-$_['text_success']       = 'Success: You have modified SagePay account details!';
-
-// Entry
-$_['entry_merchant_id']  = 'Merchant ID:';
-$_['entry_merchant_key'] = 'Merchant Key:';
-$_['entry_total']        = 'Total:<br /><span class="help">The checkout total the order must reach before this payment method becomes active.</span>';
-$_['entry_order_status'] = 'Order Status:';
-$_['entry_geo_zone']     = 'Geo Zone:';
-$_['entry_status']       = 'Status:';
-$_['entry_sort_order']   = 'Sort Order:';
-
-// Error
-$_['error_permission']   = 'Warning: You do not have permission to modify payment SagePay!';
-$_['error_merchant_id']  = 'Merchant ID Required!';
-$_['error_merchant_key'] = 'Merchant Key Required!';
->>>>>>> 7638022f044301e632a2ad52a22d03e919dbc2c0
 ?>

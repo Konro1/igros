@@ -204,11 +204,7 @@
   <div class="buttons">
     <div class="right"><a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
     <div class="center"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a></div>
-<<<<<<< HEAD
   </div>
-=======
-  </div>
->>>>>>> 7638022f044301e632a2ad52a22d03e919dbc2c0
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $('input[name=\'next\']').bind('change', function() {
