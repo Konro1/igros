@@ -4,7 +4,7 @@
 <?php } ?>
 <?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content">
-  <div class="col-md-12">
+<div class="col-md-10">
     <?php echo $content_top; ?>
     <div class="breadcrumb">
       <?php foreach ($breadcrumbs as $breadcrumb) { ?>
