@@ -1,5 +1,7 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<?php echo $header; ?>
+
+<?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content"><div class="col-md-10"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -511,5 +513,6 @@ $(document).ready(function() {
 	});
 	$('.time').timepicker({timeFormat: 'h:m'});
 });
-//--></script> 
+//--></script>
+</div>
 <?php echo $footer; ?>

@@ -319,9 +319,9 @@ table.form > * > * > td {
 table.form td {
 	padding: 4px;
 }
-input.large-field, select.large-field {
+/*input.large-field, select.large-field {
 	width: 300px;
-}
+}*/
 table.list {
 	border-collapse: collapse;
 	width: 100%;
@@ -490,7 +490,7 @@ a.button:hover, input.button:hover {
 	padding: 10px;
 	margin-bottom: 20px;
 	z-index: 2;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 /* box */
 .box {
@@ -813,7 +813,6 @@ ul.box-filter > li ul {
 	border: 1px solid #E7E7E7;
 }
 .product-grid .name a {
-	color: #38B0E3;
 	font-weight: bold;
 	text-decoration: none;
 	display: block;
@@ -905,7 +904,8 @@ ul.box-filter > li ul {
 	color: #4D4D4D;
 }
 .product-info .description span {
-	color: #38B0E3;
+	color: #5fa42d;
+	font-weight: bold;
 }
 .product-info .description a {
 	color: #4D4D4D;
