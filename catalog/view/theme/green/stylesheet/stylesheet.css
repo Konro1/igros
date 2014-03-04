@@ -794,13 +794,13 @@ ul.box-filter > li ul {
 	width: 100%;
 	overflow: auto;
 }
-.product-grid > div {
+/*.product-grid > div {
 	width: 130px;
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 20px;
 	margin-bottom: 15px;
-}
+}*/
 #column-left + #column-right + #content .product-grid > div {
 	width: 125px;
 }

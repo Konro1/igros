@@ -44,8 +44,9 @@
     <?php if ($products) { ?>
     <div class="product-filter">
       <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
-      <div class="limit"><b><?php echo $text_limit; ?></b>
-        <select onchange="location = this.value;">
+      <div class="limit form-inline">
+        <label for=""><b><?php echo $text_limit; ?></b></label>
+        <select onchange="location = this.value;" class="form-control">
           <?php foreach ($limits as $limits) { ?>
           <?php if ($limits['value'] == $limit) { ?>
           <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
@@ -55,8 +56,9 @@
           <?php } ?>
         </select>
       </div>
-      <div class="sort"><b><?php echo $text_sort; ?></b>
-        <select onchange="location = this.value;">
+      <div class="sort form-inline">
+        <label for=""><b><?php echo $text_sort; ?></b></label>
+        <select onchange="location = this.value;" class="form-control">
           <?php foreach ($sorts as $sorts) { ?>
           <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
           <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
@@ -70,7 +72,7 @@
     <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
     <div class="product-list">
       <?php foreach ($products as $product) { ?>
-      <div>
+      <div class="col-md-3">
         <?php if ($product['thumb']) { ?>
         <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
         <?php } ?>
