@@ -26,6 +26,8 @@ $_['text_your_address'] = 'Ваша адреса'; #33918
 $_['text_newsletter'] = 'Розсилка новин'; #33919
 $_['text_your_password'] = 'Ваш пароль'; #33920
 $_['text_agree'] = 'Я прочитав розділ <a class="fancybox" href="%s" alt="%s"><b>%s</b></a> та згоден з правилами'; #35128
+$_['text_address'] = 'Змінити записи адресної книги';
+$_['text_recurring'] = 'Регулярні платежі';
 $_['entry_firstname'] = 'Ім’я:'; #33921
 $_['entry_lastname'] = 'Прізвище:'; #33922
 $_['entry_email'] = 'E-mail:'; #34125

@@ -1,6 +1,7 @@
 <?php
 class ControllerAccountDownload extends Controller {
 	public function index() {
+		 
 		if (!$this->customer->isLogged()) {
 			$this->session->data['redirect'] = $this->url->link('account/download', '', 'SSL');
 
@@ -103,8 +104,10 @@ class ControllerAccountDownload extends Controller {
 			$this->data['continue'] = $this->url->link('account/account', '', 'SSL');
 
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/account/download.tpl')) {
+				 
 				$this->template = $this->config->get('config_template') . '/template/account/download.tpl';
 			} else {
+
 				$this->template = 'default/template/account/download.tpl';
 			}
 

@@ -5,3 +5,20 @@
 2014-02-23 19:57:31 - PHP Notice:  Undefined variable: i in /srv/www/igros.mls/catalog/view/theme/green/template/module/featured.tpl on line 7
 2014-02-23 19:57:31 - PHP Notice:  Undefined variable: i in /srv/www/igros.mls/catalog/view/theme/green/template/module/featured.tpl on line 31
 2014-02-23 19:57:31 - PHP Notice:  Undefined variable: i in /srv/www/igros.mls/catalog/view/theme/green/template/module/featured.tpl on line 34
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: recurring_id in /srv/www/igros.mls/catalog/controller/account/recurring.php on line 146
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: recurring_id in /srv/www/igros.mls/catalog/controller/account/recurring.php on line 148
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: created in /srv/www/igros.mls/catalog/controller/account/recurring.php on line 150
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: product_id in /srv/www/igros.mls/catalog/controller/account/recurring.php on line 151
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: order_id in /srv/www/igros.mls/catalog/controller/account/recurring.php on line 152
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: status in /srv/www/igros.mls/catalog/controller/account/recurring.php on line 154
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: status in /srv/www/igros.mls/catalog/controller/account/recurring.php on line 154
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: recurring_id in /srv/www/igros.mls/catalog/controller/account/recurring.php on line 220
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: order_recurring_id in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 27
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: status in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 29
+2014-03-04 21:48:21 - PHP Notice:  Undefined index:  in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 29
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: payment_method in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 30
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: product_name in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 33
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: product_quantity in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 34
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: order_id in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 35
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: profile_description in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 49
+2014-03-04 21:48:21 - PHP Notice:  Undefined index: profile_reference in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 50
