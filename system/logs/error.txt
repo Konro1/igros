@@ -22,3 +22,7 @@
 2014-03-04 21:48:21 - PHP Notice:  Undefined index: order_id in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 35
 2014-03-04 21:48:21 - PHP Notice:  Undefined index: profile_description in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 49
 2014-03-04 21:48:21 - PHP Notice:  Undefined index: profile_reference in /srv/www/igros.mls/catalog/view/theme/green/template/account/recurring_info.tpl on line 50
+2014-03-05 21:28:01 - PHP Notice:  Undefined variable: categy in /srv/www/igros.mls/catalog/view/theme/green/template/product/category.tpl on line 27
+2014-03-05 21:28:01 - PHP Notice:  Undefined variable: categy in /srv/www/igros.mls/catalog/view/theme/green/template/product/category.tpl on line 27
+2014-03-05 21:28:14 - PHP Notice:  Undefined variable: categy in /srv/www/igros.mls/catalog/view/theme/green/template/product/category.tpl on line 28
+2014-03-05 21:28:14 - PHP Notice:  Undefined variable: categy in /srv/www/igros.mls/catalog/view/theme/green/template/product/category.tpl on line 28

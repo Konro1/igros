@@ -684,7 +684,9 @@ ul.box-filter > li ul {
 /* product */
 .product-filter {
 	border-bottom: 1px solid #EEEEEE;
-	padding-bottom: 5px;
+	border-top: 1px solid #EEEEEE;
+	padding-bottom: 15px;
+	padding-top: 15px;
 	overflow: auto;
 }
 .product-filter .display {

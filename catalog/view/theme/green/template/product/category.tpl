@@ -7,7 +7,7 @@
       <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
       <?php } ?>
     </div>
-    <h1><?php echo $heading_title; ?></h1>
+    <div class="well well-sm"><h1><?php echo $heading_title; ?></h1></div>
     <?php if ($thumb || $description) { ?>
     <div class="category-info">
       <?php if ($thumb) { ?>
@@ -22,11 +22,14 @@
     <h2><?php echo $text_refine; ?></h2>
     <div class="category-list">
       <?php if (count($categories) <= 5) { ?>
-      <ul>
-        <?php foreach ($categories as $category) { ?>
-        <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-        <?php } ?>
-      </ul>
+      <?php foreach ($categories as $category) { ?>
+      <div class="col-md-2">
+        <?php if ($category['image']): ?>
+          <img src="<?php echo $category['image'] ?>" alt="">
+        <?php endif ?>
+        <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+      </div>
+      <?php } ?>
       <?php } else { ?>
       <?php for ($i = 0; $i < count($categories);) { ?>
       <ul>
@@ -94,11 +97,11 @@
         <?php if ($product['rating']) { ?>
         <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
         <?php } ?>
-        <div class="cart">
-          <input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
-        </div>
-        <div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
         <div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
+        <div class="cart">
+          <a class="button-cart pull-left" href="javascript:void(0)" onclick="addToCart('<?php echo $product['product_id']; ?>');"><i class="glyphicon glyphicon-plus"></i><span onclick="addToCart('<?php echo $product['product_id']; ?>');"><?php echo $button_cart; ?></span></a>
+          <a class="button-view wishlist pull-right" onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a>
+        </div>
       </div>
       <?php } ?>
     </div>
@@ -118,9 +121,8 @@
         
         $('.product-list > div').each(function(index, element) {
          html  = '<div class="right">';
-         html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
-         html += '  <div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
          html += '  <div class="compare">' + $(element).find('.compare').html() + '</div>';
+         html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
          html += '</div>';			
          
          html += '<div class="left">';
@@ -147,11 +149,11 @@
         }
         
         html += '</div>';
-        
+        $(element).removeClass('col-md-3').addClass('col-md-12');
         $(element).html(html);
       });		
 
-$('.display').html('<b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display(\'grid\');"><?php echo $text_grid; ?></a>');
+$('.display').html('<span class="glyphicon glyphicon-align-justify"></span> <a onclick="display(\'grid\');" class="glyphicon glyphicon-th"></a>');
 
 $.totalStorage('display', 'list'); 
 } else {
@@ -181,14 +183,14 @@ $.totalStorage('display', 'list');
     html += '<div class="rating">' + rating + '</div>';
   }
   
-  html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
-  html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
   html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
+  html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
   
+  $(element).removeClass('col-md-12').addClass('col-md-3');
   $(element).html(html);
 });	
   
-  $('.display').html('<b><?php echo $text_display; ?></b> <a onclick="display(\'list\');"><?php echo $text_list; ?></a> <b>/</b> <?php echo $text_grid; ?>');
+  $('.display').html('<a onclick="display(\'list\');" class="glyphicon glyphicon-align-justify"></a> <span class="glyphicon glyphicon-th"></span>');
   
   $.totalStorage('display', 'grid');
 }
