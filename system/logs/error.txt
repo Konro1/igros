@@ -26,3 +26,4 @@
 2014-03-05 21:28:01 - PHP Notice:  Undefined variable: categy in /srv/www/igros.mls/catalog/view/theme/green/template/product/category.tpl on line 27
 2014-03-05 21:28:14 - PHP Notice:  Undefined variable: categy in /srv/www/igros.mls/catalog/view/theme/green/template/product/category.tpl on line 28
 2014-03-05 21:28:14 - PHP Notice:  Undefined variable: categy in /srv/www/igros.mls/catalog/view/theme/green/template/product/category.tpl on line 28
+2014-03-07 19:43:02 - PHP Notice:  Error: Could not load model module/filterpro! in /srv/www/igros.mls/system/engine/loader.php on line 48
