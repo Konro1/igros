@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$('input[type="checkbox"]').uniform();
 	/* Search */
 	$('.button-search').bind('click', function() {
 		url = $('base').attr('href') + 'index.php?route=product/search';
@@ -83,7 +84,30 @@ $(document).ready(function() {
 		$(this).parent().fadeOut('slow', function() {
 			$(this).remove();
 		});
-	});	
+	});
+
+	// quantity buttons
+	$("#product-quantity-down").click(function(event) {
+		event.preventDefault();
+		var val = $("#product-quantity").val();
+		if (val > 1) {
+			val -= 1;
+		} else {
+			val = 1;
+		}
+		$("#product-quantity").val(val)
+	});
+	$("#product-quantity-up").click(function(event) {
+		event.preventDefault();
+		var val = parseInt($("#product-quantity").val());
+		if (val >= 1) {
+			val += 1;
+		} else {
+			val = 1;
+		}
+		$("#product-quantity").val(val)
+	});
+
 });
 
 function getURLVar(key) {

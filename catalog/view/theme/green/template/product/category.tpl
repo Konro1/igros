@@ -1,6 +1,10 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<?php echo $header; ?>
 <div id="content">
-  <div class="col-md-10">
+  <?php echo $column_left; ?>
+  <div class="col-md-3 pull-right">
+    <?php echo $column_right; ?>
+  </div>
+  <div class="col-md-9">
     <?php echo $content_top; ?>
     <div class="breadcrumb">
       <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -77,7 +81,11 @@
       <?php foreach ($products as $product) { ?>
       <div class="col-md-3">
         <?php if ($product['thumb']) { ?>
-        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+        <div class="image">
+          <a href="<?php echo $product['href']; ?>">
+            <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>"/>
+          </a>
+        </div>
         <?php } ?>
         <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
         <div class="description"><?php echo $product['description']; ?></div>
@@ -122,7 +130,8 @@
         $('.product-list > div').each(function(index, element) {
          html  = '<div class="right">';
          html += '  <div class="compare">' + $(element).find('.compare').html() + '</div>';
-         html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
+         var cart_html = '<a class="button-cart pull-left" href="javascript:void(0)" onclick="addToCart(\'<?php echo $product['product_id']; ?>\');"><i class="glyphicon glyphicon-plus"></i><span onclick="addToCart(\'<?php echo $product['product_id']; ?>\');"><?php echo $button_cart; ?></span></a><a class="button-view wishlist pull-right" onclick="addToWishList(\'<?php echo $product['product_id']; ?>\');"><?php echo $button_wishlist; ?></a>';
+         html += '  <div class="cart">' + cart_html + '</div>';
          html += '</div>';			
          
          html += '<div class="left">';
@@ -182,9 +191,10 @@ $.totalStorage('display', 'list');
   if (rating != null) {
     html += '<div class="rating">' + rating + '</div>';
   }
-  
+  var cart_html = '<a class="button-cart pull-left" href="javascript:void(0)" onclick="addToCart(\'<?php echo $product['product_id']; ?>\');"><i class="glyphicon glyphicon-plus"></i><span onclick="addToCart(\'<?php echo $product['product_id']; ?>\');"><?php echo $button_cart; ?></span></a><a class="button-view wishlist pull-right" onclick="addToWishList(\'<?php echo $product['product_id']; ?>\');"><?php echo $button_wishlist; ?></a>';
+          
   html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
-  html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
+  html += '<div class="cart">' + cart_html + '</div>';
   
   $(element).removeClass('col-md-12').addClass('col-md-3');
   $(element).html(html);
